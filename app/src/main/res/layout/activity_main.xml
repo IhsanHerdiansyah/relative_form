@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaa"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ihsan Herdiansyah"
+        android:textSize="25dp"
+        android:layout_margin="50px"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="23dp"
+        android:id="@+id/nama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:id="@+id/editnama"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alamat"
+        android:text="Alamat"
+        android:textSize="23dp"
+        android:layout_below="@+id/editnama"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editalamat"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/alamat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kampus"
+        android:text="Kampus"
+        android:textSize="23dp"
+        android:layout_below="@+id/editalamat"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editkampus"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/kampus"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/foto1"
+        android:src="@drawable/foto"
+        android:layout_below="@+id/editkampus"
+        android:layout_marginLeft="50dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foto"
+        android:id="@+id/foto2"
+        android:layout_toRightOf="@+id/foto1"
+        android:layout_below="@+id/editkampus"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foto"
+        android:id="@+id/foto3"
+        android:layout_toRightOf="@+id/foto2"
+        android:layout_below="@+id/editkampus"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/kembali"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/foto1"/>
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/foto3"
+        android:layout_toRightOf="@+id/kembali"/>
+</RelativeLayout>
